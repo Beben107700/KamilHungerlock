@@ -1,0 +1,10 @@
+main: me.beben107700.Main
+name: hungerlock
+version: 1.0
+
+commands:
+  hungerlock:
+    usage: /hungerlock
+    description: lock your hunger
+    permission: kamil.hungerlock
+    aliases: [hlock, hl, lock]
