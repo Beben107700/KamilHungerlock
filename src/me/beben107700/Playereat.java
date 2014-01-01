@@ -21,12 +21,12 @@ public class Playereat implements Listener{
 		if(p.getItemInHand().getType() == Material.COOKED_BEEF && p.getHealth() != 20){
 						
 			
-			int amt = p.getItemInHand().getAmount();
-			p.getItemInHand().setAmount(amt - 1);
+
 			
 			if(p.getItemInHand().getAmount() == 1 ){
-				p.sendMessage("Be careful, you only got one steak left");
 				p.getItemInHand().setType(Material.STRING);
+			}else{
+				p.getItemInHand().setAmount(p.getItemInHand().getAmount() - 1);
 			}
 			
 			
